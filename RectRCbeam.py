@@ -14,7 +14,7 @@ st.image("RCBeam.png")
 
 with st.sidebar:
     st.header("**Concrete Beam Parameters**")
-    beam_depth = st.slider(label="Beam Depth (mm)", min_value = 250, max_value=3000, value=500, step=50, format="%i")
+    beam_depth = st.slider(label="Beam Depth (mm)", min_value = 250, max_value=3000, value=700, step=50, format="%i")
     beam_width = st.slider(label="Beam Width (mm)", min_value = 600, max_value=3600, value=2400, step=600, format="%i")
     beam_span = st.slider(label="Beam Span (m)", min_value = 3, max_value=15, value=8, step=1, format="%f")
     conc_grade = st.selectbox(label="Concrete Grade (MPa)", options=[25, 32, 40, 50, 65, 80], index= 2)
